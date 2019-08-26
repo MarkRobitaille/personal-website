@@ -1,28 +1,150 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="background"></div>
+    <!-- id="background" src="@/assets/galaxy-background.jpg"> -->
+    <!-- <b-img :src="image"></b-img> -->
+    <b-row align-h="center" class="pt-4 ml-0 mr-0">
+      <b-col sm="11" class="pl-0 pr-0">
+        <b-navbar id="navigator" fixed>
+          <b-navbar-brand to="/">Mark Robitaille</b-navbar-brand>
+          <b-navbar-nav>
+            <b-nav-item to="about">About Me</b-nav-item>
+            <b-nav-item>Test</b-nav-item>
+            <b-nav-item>Test</b-nav-item>
+          </b-navbar-nav>
+        </b-navbar>
+      </b-col>
+    </b-row>
+    
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <b-row align-h="center" class="mt-4 mb-4 ml-0 mr-0">
+      <b-col sm="8" >
+        <transition name="fade" mode="out-in">
+          <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
+          <router-view id="pages" class="mt-0 mb-0 ml-0 mr-0"></router-view>
+        </transition>
+      </b-col>
+    </b-row>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    // HelloWorld
+  },
+  data() {
+    return {
+      image: require("./assets/galaxy-background.jpg")
+    };
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.5s;
+  transition-property: opacity;
+  transition-timing-function: ease;
 }
+
+.fade-enter,
+.fade-leave {
+  opacity: 0;
+}
+#background {
+  width: 100%;
+  /* Alternate if scroll bar is removed
+  width: 100%;
+  overflow-x: hidden; */
+  /* width: calc(100vw - 34px); */
+  height: 100%;
+  /* top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  /* margin-left: auto;
+  margin-right: auto; */
+  background-image: url("./assets/galaxy-background.jpg");
+  /* background-image: url("./assets/galaxy-background.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  /* padding-left: calc(100vw - 100%); */
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  text-align: center;
+  /* background-image: none */
+  /* background: #ffffff; */
+  /* color: #2c3e50; */
+  /* margin-top: 60px; */
+  /* background-image: url("./assets/galaxy-background.jpg"); */
+  /* background-image: url("./assets/galaxy-background.jpg"); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* position: absolute; */
+  /* Full height */
+  height: 100%;
+  width: 100%;
+  /* z-index:2; */
+  /* padding: 0; */
+  margin: 0;
+
+  /* Center and scale the image nicely */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* overflow: hidden */
+}
+#navigator {
+  position: sticky;
+  border-radius: 25px;
+  background: #ffffff;
+  z-index: 2;
+}
+#pages {
+  border-radius: 25px;
+  background: #ffffff;
+  z-index: 1;
+}
+/* .b-row { */
+/* background-color: transparent; */
+/* } */
+/* .b-col { */
+/* background-color: transparent; */
+/* } */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  /* width: calc(100vw - 34px); */
+  /* padding-left: 34px; */
+}
+.header {
+  margin: 0;
+}
+body {
+  /* width: 100vw; */
+  overflow-y: scroll;
+}
+/* html {
+  height: 100%;
+  width: 100%;
+  background-image: url("./assets/galaxy-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+} */
 </style>
