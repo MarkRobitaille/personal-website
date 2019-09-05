@@ -6,16 +6,16 @@
     <!-- <b-img :src="image"></b-img> -->
     <!-- <b-row v-if="navbarFixed"></b-row> -->
 
-    <b-row align-h="center" class="ml-0 mr-0">
+    <!-- <b-row align-h="center" class="ml-0 mr-0"> -->
       <!-- <b-col sm="12" class="pt-4 ml-0 mr-0"> -->
-      <b-navbar id="navigator" toggleable="sm">
+      <b-navbar class="navigator" toggleable="sm" fixed="top">
         <b-navbar-brand to="/">Mark Robitaille</b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
-          <b-navbar-nav>
-            <b-nav-item to="resume">Resume</b-nav-item>
-            <b-nav-item>Portfolio</b-nav-item>
-            <b-nav-item>{{yLocation}}</b-nav-item>
+          <b-navbar-nav pills>
+            <b-nav-item pill to="resume" class="mt-0 mb-0 ml-0 mr-0">Resume</b-nav-item>
+            <b-nav-item class="mt-0 mb-0 ml-0 mr-0">Portfolio</b-nav-item>
+            <!-- <b-nav-item>{{yLocation}}</b-nav-item> -->
           </b-navbar-nav>
 
           <b-navbar-nav class="ml-auto">
@@ -23,7 +23,7 @@
             <b-button
               variant="outline-secondary"
               pill
-              class="ml-1 mr-1"
+              class="ml-1 mr-1 navbar-button"
               style="vertical-align:middle;"
             >
               <!-- <div class="github"></div> -->
@@ -36,7 +36,7 @@
             </b-button>
             <!-- </b-col> -->
             <!-- <b-col> -->
-            <b-button variant="outline-secondary" pill class="ml-1 mr-1">
+            <b-button variant="outline-secondary" pill class=" ml-1 mr-1 navbar-button">
               <img
                 alt="linkedin logo"
                 src="./assets/linkedin-logo-small2.png"
@@ -49,14 +49,14 @@
         </b-collapse>
       </b-navbar>
       <!-- </b-col> -->
-    </b-row>
-    <div id="space" v-if="navbarFixed"></div>
+    <!-- </b-row> -->
+    <!-- <div id="space" v-if="navbarFixed"></div> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <b-row align-h="center" class="mt-4 mb-4 ml-0 mr-0">
+    <b-row align-h="center" class="ml-0 mr-0">
       <b-col sm="8">
         <transition name="fade" mode="out-in">
           <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-          <router-view id="pages" class="mt-0 mb-0 ml-0 mr-0"></router-view>
+          <router-view id="pages" class="pt-2 pb-2 ml-0 mr-0"></router-view>
         </transition>
       </b-col>
     </b-row>
@@ -78,24 +78,30 @@ export default {
       yLocation: null
     };
   },
-  mounted() {
-    window.addEventListener("scroll", () => {
-      this.yLocation = Math.round(window.scrollY);
-    });
-  },
-  watch: {
-    yLocation: function(val) {
-      if (val >= 30 && this.navbarFixed == null) {
-        this.navbarFixed = "top";
-      } else if (val < 30 && this.navbarFixed != null) {
-        this.navbarFixed = null;
-      }
-    }
-  }
+  // mounted() {
+  //   window.addEventListener("scroll", () => {
+  //     this.yLocation = Math.round(window.scrollY);
+  //   });
+  // },
+  // watch: {
+  //   yLocation: function(val) {
+  //     if (val >= 30 && this.navbarFixed == null) {
+  //       this.navbarFixed = "top";
+  //     } else if (val < 30 && this.navbarFixed != null) {
+  //       this.navbarFixed = null;
+  //     }
+  //   }
+  // } 
 };
 </script>
 
 <style>
+@media (max-width: 575px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .navbar-button {
+    margin-top: 5px;
+  }
+}
 .fade-enter-active,
 .fade-leave-active {
   transition-duration: 0.5s;
@@ -160,18 +166,25 @@ export default {
   background-size: cover; */
   /* overflow: hidden */
 }
-#navigator {
-  position: fixed;
+.navigator {
+  /* border-bottom: 1px solid black; */
+  /* position: fixed; */
   /* margin-top: 30px; */
   /* margin: 0 auto; */
-  width: 100%;
-  border-radius: 10px;
+  padding-bottom: 100px;
+  /* width: 100%; */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   background: #ffffff;
-  z-index: 2;
+  /* z-index: 2; */
 }
 #pages {
-  border-radius: 10px;
-  margin-top: 80px;
+  /* border-radius: 10px; */
+  border-radius: 5px;
+  margin-top: 70px;
+  margin-bottom:15px;
+  display:inline-block;
+  /* margin-top: 80px; */
   background: #ffffff;
   z-index: 1;
 }
@@ -195,6 +208,7 @@ body {
 body {
   /* width: 100vw; */
   overflow-y: scroll;
+  /* padding-top: 70px; */
 }
 /* html {
   height: 100%;
