@@ -1,6 +1,6 @@
 // import HelloWorld from './components/HelloWorld.vue'
 import Homepage from './components/Homepage.vue'
-import AboutMe from './components/AboutMe.vue'
+import Resume from './components/Resume.vue'
 
 const routes = [
     {
@@ -9,9 +9,9 @@ const routes = [
         name: "Homepage"
     },
     {
-        path: '/about',
-        component: AboutMe,
-        name: "AboutMe"
+        path: '/resume',
+        component: Resume,
+        name: "Resume"
     }
 
 ]

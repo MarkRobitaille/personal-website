@@ -2,8 +2,7 @@
   <b-container fluid id="about">
     <b-row align-v="center">
       <b-col>
-        <h3>ABOUT ME</h3>
-MARK ROBITAILLE
+        <h3>ABOUT ME</h3>MARK ROBITAILLE
         7 Henry Pehrson Cove, Winnipeg, MB - R2N 3C1 204-330-4689 • robitai4@myumanitoba.ca
         EDUCATION Bachelor of Science, Major in Computer Science (Co-op) University of Manitoba
         2011-2012, 2016-Present Current GPA: 4.20 • Specialization: Human-Computer Interaction and Computer Graphics • Expected Minor in Psychology • Currently Enrolled: Software Engineering 1, Operating Systems, and Distributed Computing
@@ -22,7 +21,7 @@ MARK ROBITAILLE
 
 <script>
 export default {
-  name: "AboutMe",
+  name: "Resume",
   data() {
     return {};
   },
