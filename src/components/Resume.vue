@@ -1,6 +1,6 @@
 <template>
   <b-container fluid id="about">
-    <b-row align-v="center">
+    <b-row class="page-content">
       <b-col>
         <h3>ABOUT ME</h3>MARK ROBITAILLE
         7 Henry Pehrson Cove, Winnipeg, MB - R2N 3C1 204-330-4689 • robitai4@myumanitoba.ca
