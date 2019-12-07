@@ -7,7 +7,7 @@
     </b-row>
     <b-row class="page-content">
       <b-col>
-        <h4 id="hithere">Hi there!</h4>
+        <h3 id="hithere">Hi there!</h3>
         <p>My name is Mark Robitaille and I'm a Computer Science major at the University of Manitoba. I'm always interested in learning new technologies and new ways to interact with computers. I'm passionate about video games and web development.</p>
         <p
           class="mb-0"
