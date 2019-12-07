@@ -44,7 +44,8 @@
 export default {
   name: "app",
   data() {
-    return {};
+    return {
+    };
   }
 };
 </script>
@@ -97,12 +98,13 @@ export default {
 #pages {
   border-radius: 5px;
   margin-top: 70px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   z-index: 1;
 }
 .page-content {
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-bottom: 15px;
   background: #ffffff;
   border-radius: 5px;
 }
