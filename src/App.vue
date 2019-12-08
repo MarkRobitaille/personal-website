@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <div id="background" class="background"></div>
+    <div
+      id="background"
+      :class="{background: true, 'gradient1': $route.name=='Homepage', 'gradient2': $route.name=='Resume', 'gradient3': $route.name=='Projects'}"
+    ></div>
     <b-navbar class="navigator" toggleable="sm" fixed="top">
       <b-navbar-brand to="/">Mark Robitaille</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -25,6 +28,7 @@
             pill
             class="ml-1 mr-1 navbar-button"
           >
+          <!-- :variant="buttonType" -->
             <b-img class="navbar-button-image mr-1" src="@/assets/linkedin-logo.png" height="20"></b-img>LinkedIn
           </b-button>
         </b-navbar-nav>
@@ -45,7 +49,32 @@ export default {
   name: "app",
   data() {
     return {
+      buttonType: 'outline-secondary'
     };
+  },
+  created() {
+    this.setButtonType(this.$route.name);
+  },
+  watch: {
+    $route: function (to) {
+      // Track changes to route to update css
+      this.setButtonType(to.name);
+    }
+  },
+  methods: {
+    setButtonType(routeName) {
+      switch(routeName) {
+        case 'Homepage':
+          this.buttonType = 'outline-primary';
+          break;
+        case 'Resume':
+          this.buttonType = 'outline-success';
+          break;
+        case 'Projects':
+          this.buttonType = 'outline-danger';
+          break;
+      }
+    }
   }
 };
 </script>
@@ -74,10 +103,56 @@ export default {
   position: fixed;
   margin: 0;
   padding: 0;
-  background-image: url("./assets/galaxy-background.jpg");
+  /* background-image: url("./assets/galaxy-background.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+
   z-index: 0;
+}
+.gradient1 {
+  background: rgb(10, 40, 140);
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(175, 190, 240),
+    rgb(10, 40, 140)
+  ); /* Chrome and old Safari */
+  background: linear-gradient(
+    -45deg,
+    rgb(175, 190, 240),
+    rgb(10, 40, 140)
+  ); /* Edge/IE, Firefox, modern Safari */
+  background-size: 200%;
+  animation: gradient-animation 2s;
+}
+.gradient2 {
+  background: rgb(61, 201, 25);
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(183, 231, 170),
+    rgb(10, 117, 58)
+  ); /* Chrome and old Safari */
+  background: linear-gradient(
+    -45deg,
+    rgb(183, 231, 170),
+    rgb(10, 117, 58)
+  ); /* Edge/IE, Firefox, modern Safari */
+  background-size: 150%;
+  animation: gradient-animation2 2s;
+}
+.gradient3 {
+  background: rgb(145, 32, 32);
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(248, 181, 181),
+    rgb(145, 32, 32)
+  ); /* Chrome and old Safari */
+  background: linear-gradient(
+    -45deg,
+    rgb(248, 181, 181),
+    rgb(145, 32, 32)
+  ); /* Edge/IE, Firefox, modern Safari */
+  background-size: 200%;
+  animation: gradient-animation3 2s;
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -118,5 +193,29 @@ body {
 }
 .underline {
   text-decoration: underline;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+@keyframes gradient-animation2 {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+@keyframes gradient-animation3 {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
 }
 </style>
