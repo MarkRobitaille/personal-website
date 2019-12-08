@@ -136,7 +136,7 @@ export default {
     rgb(183, 231, 170),
     rgb(10, 117, 58)
   ); /* Edge/IE, Firefox, modern Safari */
-  background-size: 150%;
+  background-size: 200%;
   animation: gradient-animation2 2s;
 }
 .gradient3 {
