@@ -2,14 +2,14 @@
   <b-container fluid id="about">
     <b-row class="page-content">
       <b-col>
-        <h3 align="center"><strong>MARK ROBITAILLE</strong></h3>
+        <h3 align="center"><strong>Mark Robitaille</strong></h3>
         <p align="center">
           7 Henry Pehrson Cove, Winnipeg, MB, R2N 3C1
           <br />204-330-4689 - robitai4@myumanitoba.ca
         </p>
 
-        <h4 id="education" class="underline">
-          <strong>EDUCATION</strong>
+        <h4 id="education" class="underline mt-4">
+          <strong>Education</strong>
         </h4>
 
         <h5 id="bachelorofsciencemajorincomputersciencecoop_201120122016present_">
@@ -27,8 +27,8 @@
           <li>Expected Minor in Psychology</li>
         </ul>
 
-        <h4 id="technicalskills" class="underline">
-          <strong>TECHNICAL SKILLS</strong>
+        <h4 id="technicalskills" class="underline mt-4">
+          <strong>Technical Skills</strong>
         </h4>
 
         <h5 id="programming">
@@ -71,8 +71,8 @@
           <li>Experience with Windows and familiarity with Unix/Linux and Mac OS.</li>
         </ul>
 
-        <h4 id="workexperience" class="underline">
-          <strong>WORK EXPERIENCE</strong>
+        <h4 id="workexperience" class="underline mt-4">
+          <strong>Work Experience</strong>
         </h4>
 
         <h5 id="programmercoop_may2019august2019_">
@@ -107,12 +107,21 @@
           <li>Resolved problems as they occurred by engaging with customers on a personal basis to ensure their satisfaction.</li>
         </ul>
 
-        <h4 id="academicproject" class="underline">
-          <strong>ACADEMIC PROJECT</strong>
+        <h4 id="academicproject" class="underline mt-4">
+          <strong>Academic Projects</strong>
         </h4>
 
         <h5 id="fitnessandhealthdiarysoftwareengineering1_winter2019_">
-          <strong>Fitness and Health Diary</strong>, Software Engineering 1 -
+          <strong>Family Folder</strong>, Human-Computer Interaction 1 -
+          <em>Fall 2019</em>
+        </h5>
+
+        <ul>
+          <li>Created a high-fidelity prototype of a family communication web application.</li>
+        </ul>
+
+        <h5 id="fitnessandhealthdiarysoftwareengineering1_winter2019_">
+          <strong>Fitness and Health Assistant</strong>, Software Engineering 1 -
           <em>Winter 2019</em>
         </h5>
 
@@ -120,8 +129,8 @@
           <li>Developed an Android application as a team using version control software and agile methodologies.</li>
         </ul>
 
-        <h4 id="extracurricular" class="underline">
-          <strong>EXTRACURRICULAR</strong>
+        <h4 id="extracurricular" class="underline mt-4">
+          <strong>Extracurricular</strong>
         </h4>
 
         <h5 id="executiveincssacomputersciencestudentsassociation">

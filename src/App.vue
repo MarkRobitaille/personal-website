@@ -169,16 +169,16 @@ export default {
 .gradient1 {
   /* z-index: -1; */
   opacity: 0.8;
-  background: rgb(80, 90, 85);
+  background: rgb(50, 70, 60);
   background: -webkit-linear-gradient(
     45deg,
     rgb(200, 230, 215),
-    rgb(80, 90, 85)
+    rgb(50, 70, 60)
   ); /* Chrome and old Safari */
   background: linear-gradient(
     -45deg,
     rgb(200, 230, 215),
-    rgb(80, 90, 85)
+    rgb(50, 70, 60)
   ); /* Edge/IE, Firefox, modern Safari */
   background-size: 400%;
   animation: gradient-animation 2s;
