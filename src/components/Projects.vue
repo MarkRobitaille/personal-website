@@ -78,7 +78,12 @@
         </b-collapse>
         <b-row>
           <b-col>
-            <b-button href="https://markrobitaille.github.io/HCI-Project" variant="outline-dark" pill class="m-1">
+            <b-button
+              href="https://markrobitaille.github.io/HCI-Project"
+              variant="outline-dark"
+              pill
+              class="m-1"
+            >
               <font-awesome-icon :icon="['fas', 'external-link-alt']" size="lg" class="mr-1" />View Website
             </b-button>
             <b-button
@@ -236,7 +241,7 @@
               pill
               class="m-1"
             >
-              <font-awesome-icon :icon="['fas', 'external-link-alt']" size="lg" class="mr-1" />View Prototype CSSA Website
+              <font-awesome-icon :icon="['fas', 'external-link-alt']" size="lg" class="mr-1" />View Website
             </b-button>
             <b-button
               href="https://github.com/MarkRobitaille/prototype-cssa-website"
@@ -303,9 +308,13 @@
               </b-carousel>
             </b-col>
           </b-row>
-          <b-row>
-            <b-col>
-              <p></p>
+          <b-row align-h="center" class="mt-2">
+            <b-col sm="11">
+              <p>PhaseDodger is an arcade game where you dodge colored waves by phasing your ship's color to match them. Enemy aliens wheel in from the top of the screen to keep you on your toes. The goal of the game is to fly for as long as you can and reach a high score.</p>
+              <p>Made in a small group with less than 48 hours to develop. Created for Peg Jam 2019 with the theme "Parallel Worlds". The game was developed using Processing and an audio library called Minim.</p>
+              <p>
+                <strong>Note</strong>: Processing exports tend to be finicky to get working. If you have problems running the game's executable on itch.io, download the source from the GitHub page. Once downloaded, run the PhaseDodger.pde file in Processing with the audio library Minim installed. More details are on the game's GitHub README.
+              </p>
             </b-col>
           </b-row>
         </b-collapse>
@@ -460,7 +469,7 @@
             </h3>
           </b-col>
         </b-row>
-        <b-collapse id="collapse-4" v-model="projectsExpanded[5]" class="mt-1">
+        <b-collapse id="collapse-4" v-model="projectsExpanded[5]" class="mt-1 mb-0">
           <b-row align-h="center">
             <b-col sm="11">
               <b-carousel
@@ -473,50 +482,78 @@
               >
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/FitnessAndHealthAssistant/1.png" class="carousel-image" />
+                    <b-img-lazy
+                      src="@/assets/FitnessAndHealthAssistant/1.png"
+                      class="carousel-image"
+                    />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/FitnessAndHealthAssistant/2.png" class="carousel-image" />
+                    <b-img-lazy
+                      src="@/assets/FitnessAndHealthAssistant/2.png"
+                      class="carousel-image"
+                    />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/FitnessAndHealthAssistant/3.png" class="carousel-image" />
+                    <b-img-lazy
+                      src="@/assets/FitnessAndHealthAssistant/3.png"
+                      class="carousel-image"
+                    />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/FitnessAndHealthAssistant/4.png" class="carousel-image" />
+                    <b-img-lazy
+                      src="@/assets/FitnessAndHealthAssistant/4.png"
+                      class="carousel-image"
+                    />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/FitnessAndHealthAssistant/5.png" class="carousel-image" />
+                    <b-img-lazy
+                      src="@/assets/FitnessAndHealthAssistant/5.png"
+                      class="carousel-image"
+                    />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/FitnessAndHealthAssistant/6.png" class="carousel-image" />
+                    <b-img-lazy
+                      src="@/assets/FitnessAndHealthAssistant/6.png"
+                      class="carousel-image"
+                    />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/FitnessAndHealthAssistant/7.png" class="carousel-image" />
+                    <b-img-lazy
+                      src="@/assets/FitnessAndHealthAssistant/7.png"
+                      class="carousel-image"
+                    />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/FitnessAndHealthAssistant/8.png" class="carousel-image" />
+                    <b-img-lazy
+                      src="@/assets/FitnessAndHealthAssistant/8.png"
+                      class="carousel-image"
+                    />
                   </template>
                 </b-carousel-slide>
               </b-carousel>
             </b-col>
           </b-row>
-          <b-row>
-            <b-col>
-              <p></p>
+          <b-row align-h="center" class="mt-2 mb-0">
+            <b-col sm="11">
+              <p>
+                Fitness & Health Assistant is my group's project in Software Engineering 1. This project's purpose is to help health-conscious
+                individuals to monitor their food habits and exercise routines to enable them to live a healthier lifestyle. Essentially, it acts as a fitness diary. Features include food logging, exercise logging, checking food's nutritional information, and goal management.
+              </p>
+              <p>Our project was developed through agile methodologies utilizing user stories to frame our development process. This project was developed for Android, with tests developed. My main contributions were towards the presentation and business layers of the application, along with Espresso Acceptance testing.</p>
             </b-col>
           </b-row>
         </b-collapse>

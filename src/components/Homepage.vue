@@ -8,10 +8,10 @@
     <b-row class="page-content">
       <b-col>
         <h3 id="hithere">Hi there!</h3>
-        <p>My name is Mark Robitaille and I am a Computer Science major at the University of Manitoba. I am always interested in learning new technologies and new ways to interact with computers. I am passionate about video games and web development.</p>
+        <p>My name is Mark Robitaille. I am a computer science major at the University of Manitoba. My current passions are video game and web development. Regardless, I love learning any new technologies and want to learn as much as possible.</p>
         <p
           class="mb-0"
-        >I am one of the executives in the Computer Science Students' Association at the University of Manitoba. I help coordinate events for students to enjoy like our game jam and other social events. On top of that, I help maintain and promote our lounge to encourage new computer science students to mingle and learn with more experienced students.</p>
+        >In my free time, I act as one of the executives in the Computer Science Students' Association at the University of Manitoba. I help coordinate events for students to enjoy like game jams and social events. On top of that, I help maintain and promote our lounge to encourage new computer science students to mingle with and learn from more experienced students.</p>
       </b-col>
     </b-row>
   </b-container>
