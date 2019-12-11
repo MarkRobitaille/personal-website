@@ -1,29 +1,15 @@
-# personal-website
+# Mark Robitaille's Personal Webpage
 
-## Project setup
-```
-npm install
-```
+Developed using the following:  
+* [Vue.js](https://vuejs.org/)
+* [Vue Router](https://router.vuejs.org/)
+* [BootstrapVue](https://bootstrap-vue.js.org/)
+* [Font Awesome 5 Vue Component](https://github.com/FortAwesome/vue-fontawesome)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Background images from unsplash:  
+* [Ana Popović](https://unsplash.com/photos/x7HJdJZqplo)
+* [Annie Spratt](https://unsplash.com/photos/epcsn8Ed8kY)
+* [Nicole Y-C](https://unsplash.com/photos/Qdq-TDi_uFM)
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Favicon created using [favicon.io's favicon generator](https://favicon.io/favicon-generator/).

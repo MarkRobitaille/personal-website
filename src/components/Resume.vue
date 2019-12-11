@@ -2,7 +2,9 @@
   <b-container fluid id="about">
     <b-row class="page-content">
       <b-col>
-        <h3 align="center"><strong>Mark Robitaille</strong></h3>
+        <h3 align="center">
+          <strong>Mark Robitaille</strong>
+        </h3>
         <p align="center">
           7 Henry Pehrson Cove, Winnipeg, MB, R2N 3C1
           <br />204-330-4689 - robitai4@myumanitoba.ca
@@ -158,13 +160,4 @@ export default {
 </script>
 
 <style scoped>
-/* OPTIONAL OVERRIDE OF STYLE IN APP.VUE
-#about {
-  border-radius: 25px;
-  background: #a72525;
-} */
-/* #row {
-  border-radius: 25px;
-  background: #a72525;
-} */
 </style>

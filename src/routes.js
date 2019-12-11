@@ -7,17 +7,26 @@ const routes = [
     {
         path: '/',
         component: Homepage,
-        name: "Homepage"
+        name: "Homepage",
+        meta: {
+            title: 'Mark Robitaille'
+        }
     },
     {
         path: '/resume',
         component: Resume,
-        name: "Resume"
+        name: "Resume",
+        meta: {
+            title: 'Resume - Mark Robitaille'
+        }
     },
     {
         path: '/projects',
         component: Projects,
-        name: "Projects"
+        name: "Projects",
+        meta: {
+            title: 'Projects - Mark Robitaille'
+        }
     }
 
 ]
