@@ -88,11 +88,11 @@
         </b-collapse>
         <b-row>
           <b-col>
-            <b-button variant="outline-dark" pill class="m-1">
+            <b-button href="https://markrobitaille.github.io/HCI-Project" variant="outline-dark" pill class="m-1">
               <font-awesome-icon :icon="['fas', 'external-link-alt']" size="lg" class="mr-1" />View Website
             </b-button>
             <b-button
-              href="https://github.com/markrobitaille"
+              href="https://github.com/MarkRobitaille/HCI-Project"
               variant="outline-dark"
               pill
               class="m-1"
@@ -180,7 +180,7 @@
         <b-row>
           <b-col>
             <b-button
-              href="https://github.com/markrobitaille"
+              href="https://markrobitaille.itch.io/caterpeeler"
               variant="outline-dark"
               pill
               class="m-1"
@@ -188,7 +188,7 @@
               <font-awesome-icon :icon="['fab', 'itch-io']" size="lg" class="mr-1" />View on itch.io
             </b-button>
             <b-button
-              href="https://github.com/markrobitaille"
+              href="https://github.com/MarkRobitaille/Caterpeeler"
               variant="outline-dark"
               pill
               class="m-1"
@@ -276,7 +276,7 @@
         <b-row>
           <b-col>
             <b-button
-              href="https://github.com/markrobitaille"
+              href="https://markrobitaille.github.io/prototype-cssa-website"
               variant="outline-dark"
               pill
               class="m-1"
@@ -284,7 +284,7 @@
               <font-awesome-icon :icon="['fas', 'external-link-alt']" size="lg" class="mr-1" />View Prototype CSSA Website
             </b-button>
             <b-button
-              href="https://github.com/markrobitaille"
+              href="https://github.com/MarkRobitaille/prototype-cssa-website"
               variant="outline-dark"
               pill
               class="m-1"
@@ -372,7 +372,7 @@
         <b-row>
           <b-col>
             <b-button
-              href="https://github.com/markrobitaille"
+              href="https://nightshade.itch.io/phasedodger"
               variant="outline-dark"
               pill
               class="m-1"
@@ -380,7 +380,7 @@
               <font-awesome-icon :icon="['fab', 'itch-io']" size="lg" class="mr-1" />View on itch.io
             </b-button>
             <b-button
-              href="https://github.com/markrobitaille"
+              href="https://github.com/MarkRobitaille/PhaseDodger"
               variant="outline-dark"
               pill
               class="m-1"
@@ -467,8 +467,30 @@
         </b-collapse>
         <b-row>
           <b-col>
+            <h5>3D Version:</h5>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col>
             <b-button
-              href="https://github.com/markrobitaille"
+              href="https://github.com/MarkRobitaille/PerlinNoise3D"
+              variant="outline-dark"
+              pill
+              class="m-1"
+            >
+              <font-awesome-icon :icon="['fab', 'github']" size="lg" class="mr-1" />View on GitHub
+            </b-button>
+          </b-col>
+        </b-row>
+        <b-row class="mt-1">
+          <b-col>
+            <h5>2D Version:</h5>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col>
+            <b-button
+              href="https://github.com/MarkRobitaille/PerlinNoise2D"
               variant="outline-dark"
               pill
               class="m-1"
