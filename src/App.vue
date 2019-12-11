@@ -36,21 +36,21 @@
         <b-navbar-nav class="ml-auto">
           <b-button
             href="https://github.com/markrobitaille"
-            variant="outline-secondary"
+            variant="outline-dark"
             pill
             class="ml-1 mr-1 navbar-button"
             style="vertical-align:middle;"
           >
-            <b-img class="navbar-button-image mr-1" src="@/assets/github-logo.png" height="20"></b-img>Github
+            <font-awesome-icon :icon="['fab', 'github']" size="lg" class="mr-1"/>Github
           </b-button>
           <b-button
             href="https://www.linkedin.com/in/mark-robitaille/"
-            variant="outline-secondary"
+            variant="outline-dark"
             pill
             class="ml-1 mr-1 navbar-button"
           >
             <!-- :variant="buttonType" -->
-            <b-img class="navbar-button-image mr-1" src="@/assets/linkedin-logo.png" height="20"></b-img>LinkedIn
+            <font-awesome-icon :icon="['fab', 'linkedin']" size="lg" class="mr-1"/>LinkedIn
           </b-button>
         </b-navbar-nav>
       </b-collapse>
@@ -256,6 +256,11 @@ body {
 }
 .underline {
   text-decoration: underline;
+}
+.fontAwesomeIcon {
+  height: 20px;
+  /* width: 20px; */
+  /* width: auto; */
 }
 @keyframes gradient-animation {
   0% {

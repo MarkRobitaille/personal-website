@@ -9,6 +9,11 @@ import routes from './routes'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+// Add FontAwesome icons and component
+import { library } from '@fortawesome/fontawesome-svg-core'
+// import {  } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin, faItchIo } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 Vue.config.productionTip = false
 
@@ -20,6 +25,10 @@ const router = new VueRouter({
 
 // Add BoostrapVue
 Vue.use(BootstrapVue)
+
+// Create library of emoticons and use FontAwesomeIcon
+library.add(faGithub, faLinkedin, faItchIo)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 // Create and run the Vue instance
 new Vue({

@@ -2,7 +2,7 @@
   <b-container fluid>
     <b-row align-h="center">
       <b-col class="page-photo">
-        <b-img thumbnail src="@/assets/me.jpg" rounded="circle" width="200px" center></b-img>
+        <b-img-lazy thumbnail src="@/assets/me.jpg" rounded="circle" width="200px" center></b-img-lazy>
       </b-col>
     </b-row>
     <b-row class="page-content">
