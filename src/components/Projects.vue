@@ -4,10 +4,22 @@
       <b-col>
         <h3>Projects</h3>
         <p>On this page, you will find some of the projects I have worked on in my free time and as a student at the University of Manitoba.</p>
-        <b-button @click="expandAllProjects()" variant="outline-dark" pill class="m-1">
+        <b-button
+          @click="expandAllProjects()"
+          :disabled="allExpanded"
+          variant="outline-dark"
+          pill
+          class="m-1"
+        >
           <font-awesome-icon :icon="['fas', 'plus']" size="lg" class="mr-1" />Expand All Projects
         </b-button>
-        <b-button @click="collapseAllProjects()" variant="outline-dark" pill class="m-1">
+        <b-button
+          @click="collapseAllProjects()"
+          :disabled="noneExpanded"
+          variant="outline-dark"
+          pill
+          class="m-1"
+        >
           <font-awesome-icon :icon="['fas', 'minus']" size="lg" class="mr-1" />Collapse All Projects
         </b-button>
       </b-col>
@@ -18,7 +30,7 @@
           <b-col>
             <h3 @click="toggleProject(0)">
               Family Folder
-              <b-badge pill variant="dark" class="ml-2">Vue</b-badge>
+              <b-badge pill variant="dark" class="ml-2">Vue.js</b-badge>
               <b-link class="toggle-button float-right">
                 <font-awesome-icon
                   :icon="['fas', 'chevron-up']"
@@ -72,7 +84,7 @@
           </b-row>
           <b-row align-h="center" class="mt-2">
             <b-col sm="11">
-              <p></p>
+              <p>Family Folder is a high-fidelity prototype developed for my Human-Computer Interaction 1 course. The core idea of the application is family communication for households. Features include a group messenger, shared calendar, and shared lists. This website prototype was developed in a small group over a week or two, utilizing Vue.js, Vue Router, Vuex, and icons from Font Awesome.</p>
             </b-col>
           </b-row>
         </b-collapse>
@@ -181,7 +193,7 @@
           <b-col>
             <h3 @click="toggleProject(2)">
               Prototype CSSA Website
-              <b-badge pill variant="dark" class="ml-2">Vue</b-badge>
+              <b-badge pill variant="dark" class="ml-2">Vue.js</b-badge>
               <b-link class="toggle-button float-right">
                 <font-awesome-icon
                   :icon="['fas', 'chevron-up']"
@@ -230,7 +242,7 @@
           </b-row>
           <b-row align-h="center" class="mt-2">
             <b-col sm="11">
-              <p></p>
+              <p>As an executive of the Computer Science Student's Association (CSSA), I developed a prototype CSSA website utilizing Vue.js, Vue Router, and BootstrapVue. One of the main lingering tasks from the previous CSSA executive team was a website for our student group. This prototype shows off what a potential CSSA website would look like.</p>
             </b-col>
           </b-row>
         </b-collapse>
@@ -411,7 +423,7 @@
           </b-row>
           <b-row align-h="center" class="mt-2">
             <b-col sm="11">
-              <p></p>
+              <p>As a part of my Artificial Intelligence paper on implementing a Predator-Prey model, I took a brief excursion into learning about procedural environments. I learned about Perlin noise and its application in generating procedural environments. To learn more about applying Perlin noise, I ended up fiddling with the built-in Processing noise function. Through the process, I developed two small programs to create simple 2D and 3D landscapes using 1D and 2D Perlin noise, respectively.</p>
             </b-col>
           </b-row>
         </b-collapse>
@@ -551,7 +563,7 @@
           <b-row align-h="center" class="mt-2 mb-0">
             <b-col sm="11">
               <p>
-                Fitness & Health Assistant is my group's project in Software Engineering 1. This project's purpose is to help health-conscious
+                Fitness & Health Assistant is my group's project for the Software Engineering 1 course. This project's purpose is to help health-conscious
                 individuals to monitor their food habits and exercise routines to enable them to live a healthier lifestyle. Essentially, it acts as a fitness diary. Features include food logging, exercise logging, checking food's nutritional information, and goal management.
               </p>
               <p>Our project was developed through agile methodologies utilizing user stories to frame our development process. This project was developed for Android, with tests developed. My main contributions were towards the presentation and business layers of the application, along with Espresso Acceptance testing.</p>
@@ -577,9 +589,29 @@ export default {
       slideIndex5: 0
     };
   },
-  components: {},
+  computed: {
+    noneExpanded: function() {
+      let status = true;
+      for (let i = 0; i < this.projectsExpanded.length && status; i++) {
+        if (this.projectsExpanded[i]) {
+          status = false;
+        }
+      }
+      return status;
+    },
+    allExpanded: function() {
+      let status = true;
+      for (let i = 0; i < this.projectsExpanded.length && status; i++) {
+        if (!this.projectsExpanded[i]) {
+          status = false;
+        }
+      }
+      return status;
+    }
+  },
   methods: {
     toggleProject(index) {
+      console.log(this.noneExpanded + " - " + this.allExpanded);
       this.$set(this.projectsExpanded, index, !this.projectsExpanded[index]);
     },
     expandAllProjects() {
