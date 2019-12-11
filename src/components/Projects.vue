@@ -423,7 +423,7 @@
           </b-row>
           <b-row align-h="center" class="mt-2">
             <b-col sm="11">
-              <p>As a part of my Artificial Intelligence paper on implementing a Predator-Prey model, I took a brief excursion into learning about procedural environments. I learned about Perlin noise and its application in generating procedural environments. To learn more about applying Perlin noise, I ended up fiddling with the built-in Processing noise function. Through the process, I developed two small programs to create simple 2D and 3D landscapes using 1D and 2D Perlin noise, respectively.</p>
+              <p>As a part of my writing my Artificial Intelligence course's paper on implementing a Predator-Prey model, I took a brief excursion into learning about procedural environments. I learned about Perlin noise and its application in generating procedural environments. To learn more about applying Perlin noise, I ended up fiddling with the built-in Processing noise function. Through the process, I developed two small programs to create simple 2D and 3D landscapes using 1D and 2D Perlin noise, respectively.</p>
             </b-col>
           </b-row>
         </b-collapse>
@@ -611,7 +611,6 @@ export default {
   },
   methods: {
     toggleProject(index) {
-      console.log(this.noneExpanded + " - " + this.allExpanded);
       this.$set(this.projectsExpanded, index, !this.projectsExpanded[index]);
     },
     expandAllProjects() {
