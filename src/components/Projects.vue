@@ -44,37 +44,27 @@
               >
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/1.png" class="carousel-image" />
+                    <b-img-lazy src="@/assets/FamilyFolder/1.png" class="carousel-image" />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/2.png" class="carousel-image" />
+                    <b-img-lazy src="@/assets/FamilyFolder/2.png" class="carousel-image" />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/3.png" class="carousel-image" />
+                    <b-img-lazy src="@/assets/FamilyFolder/3.png" class="carousel-image" />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/4.png" class="carousel-image" />
+                    <b-img-lazy src="@/assets/FamilyFolder/4.png" class="carousel-image" />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/5.png" class="carousel-image" />
-                  </template>
-                </b-carousel-slide>
-                <b-carousel-slide class="float-center">
-                  <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/6.png" class="carousel-image" />
-                  </template>
-                </b-carousel-slide>
-                <b-carousel-slide class="float-center">
-                  <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/7.png" class="carousel-image" />
+                    <b-img-lazy src="@/assets/FamilyFolder/5.png" class="carousel-image" />
                   </template>
                 </b-carousel-slide>
               </b-carousel>
@@ -135,37 +125,17 @@
               >
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/1.png" class="carousel-image" />
+                    <b-img-lazy src="@/assets/Caterpeeler/1.png" class="carousel-image" />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/2.png" class="carousel-image" />
+                    <b-img-lazy src="@/assets/Caterpeeler/2.png" class="carousel-image" />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/3.png" class="carousel-image" />
-                  </template>
-                </b-carousel-slide>
-                <b-carousel-slide class="float-center">
-                  <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/4.png" class="carousel-image" />
-                  </template>
-                </b-carousel-slide>
-                <b-carousel-slide class="float-center">
-                  <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/5.png" class="carousel-image" />
-                  </template>
-                </b-carousel-slide>
-                <b-carousel-slide class="float-center">
-                  <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/6.png" class="carousel-image" />
-                  </template>
-                </b-carousel-slide>
-                <b-carousel-slide class="float-center">
-                  <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/7.png" class="carousel-image" />
+                    <b-img-lazy src="@/assets/Caterpeeler/3.png" class="carousel-image" />
                   </template>
                 </b-carousel-slide>
               </b-carousel>
@@ -231,37 +201,22 @@
               >
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/1.png" class="carousel-image" />
+                    <b-img-lazy src="@/assets/PrototypeCSSA/1.png" class="carousel-image" />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/2.png" class="carousel-image" />
+                    <b-img-lazy src="@/assets/PrototypeCSSA/2.png" class="carousel-image" />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/3.png" class="carousel-image" />
+                    <b-img-lazy src="@/assets/PrototypeCSSA/3.png" class="carousel-image" />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/4.png" class="carousel-image" />
-                  </template>
-                </b-carousel-slide>
-                <b-carousel-slide class="float-center">
-                  <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/5.png" class="carousel-image" />
-                  </template>
-                </b-carousel-slide>
-                <b-carousel-slide class="float-center">
-                  <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/6.png" class="carousel-image" />
-                  </template>
-                </b-carousel-slide>
-                <b-carousel-slide class="float-center">
-                  <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/7.png" class="carousel-image" />
+                    <b-img-lazy src="@/assets/PrototypeCSSA/4.png" class="carousel-image" />
                   </template>
                 </b-carousel-slide>
               </b-carousel>
@@ -327,37 +282,22 @@
               >
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/1.png" class="carousel-image" />
+                    <b-img-lazy src="@/assets/PhaseDodger/1.png" class="carousel-image" />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/2.png" class="carousel-image" />
+                    <b-img-lazy src="@/assets/PhaseDodger/2.png" class="carousel-image" />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/3.png" class="carousel-image" />
+                    <b-img-lazy src="@/assets/PhaseDodger/3.png" class="carousel-image" />
                   </template>
                 </b-carousel-slide>
                 <b-carousel-slide class="float-center">
                   <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/4.png" class="carousel-image" />
-                  </template>
-                </b-carousel-slide>
-                <b-carousel-slide class="float-center">
-                  <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/5.png" class="carousel-image" />
-                  </template>
-                </b-carousel-slide>
-                <b-carousel-slide class="float-center">
-                  <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/6.png" class="carousel-image" />
-                  </template>
-                </b-carousel-slide>
-                <b-carousel-slide class="float-center">
-                  <template v-slot:img>
-                    <b-img-lazy src="@/assets/PerlinNoise/7.png" class="carousel-image" />
+                    <b-img-lazy src="@/assets/PhaseDodger/4.png" class="carousel-image" />
                   </template>
                 </b-carousel-slide>
               </b-carousel>
