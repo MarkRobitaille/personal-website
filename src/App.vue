@@ -1,7 +1,28 @@
 <template>
   <div id="app">
+    <!-- Background color -->
+    <!-- Note: Shown when background opacity transitions to 0 -->
+    <div id="backgroundcolor" class="background backgroundColor"></div>
+    <!-- Background image -->
+    <!--  -->
+    <transition name="bg-fade">
+      <div
+        key="bg1"
+        id="background"
+        class="background backgroundImage"
+        v-if="$route.name=='Homepage'"
+      ></div>
+      <div
+        key="bg2"
+        id="background2"
+        class="background backgroundImage2"
+        v-else-if="$route.name=='Resume'"
+      ></div>
+      <div key="bg3" id="background3" class="background backgroundImage3" v-else></div>
+    </transition>
+    <!-- Gradient -->
     <div
-      id="background"
+      id="background-gradient"
       :class="{background: true, 'gradient1': $route.name=='Homepage', 'gradient2': $route.name=='Resume', 'gradient3': $route.name=='Projects'}"
     ></div>
     <b-navbar class="navigator" toggleable="sm" fixed="top">
@@ -28,7 +49,7 @@
             pill
             class="ml-1 mr-1 navbar-button"
           >
-          <!-- :variant="buttonType" -->
+            <!-- :variant="buttonType" -->
             <b-img class="navbar-button-image mr-1" src="@/assets/linkedin-logo.png" height="20"></b-img>LinkedIn
           </b-button>
         </b-navbar-nav>
@@ -49,29 +70,29 @@ export default {
   name: "app",
   data() {
     return {
-      buttonType: 'outline-secondary'
+      buttonType: "outline-secondary"
     };
   },
   created() {
     this.setButtonType(this.$route.name);
   },
   watch: {
-    $route: function (to) {
+    $route: function(to) {
       // Track changes to route to update css
       this.setButtonType(to.name);
     }
   },
   methods: {
     setButtonType(routeName) {
-      switch(routeName) {
-        case 'Homepage':
-          this.buttonType = 'outline-primary';
+      switch (routeName) {
+        case "Homepage":
+          this.buttonType = "outline-primary";
           break;
-        case 'Resume':
-          this.buttonType = 'outline-success';
+        case "Resume":
+          this.buttonType = "outline-success";
           break;
-        case 'Projects':
-          this.buttonType = 'outline-danger';
+        case "Projects":
+          this.buttonType = "outline-danger";
           break;
       }
     }
@@ -87,6 +108,17 @@ export default {
     margin-top: 5px;
   }
 }
+.bg-fade-enter-active,
+.bg-fade-leave-active {
+  transition-duration: 0.25s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+.bg-fade-enter,
+.bg-fade-leave {
+  opacity: 0.2;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition-duration: 0.5s;
@@ -109,49 +141,80 @@ export default {
 
   z-index: 0;
 }
+.backgroundColor {
+  z-index: -2;
+  background-color: black;
+}
+.backgroundImage {
+  z-index: -1;
+  background-image: url("./assets/t1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* opacity: 0.2; */
+}
+.backgroundImage2 {
+  z-index: -1;
+  background-image: url("./assets/t6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* opacity: 0.2; */
+}
+.backgroundImage3 {
+  z-index: -1;
+  background-image: url("./assets/t8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* opacity: 0.2; */
+}
 .gradient1 {
-  background: rgb(10, 40, 140);
+  /* z-index: -1; */
+  opacity: 0.8;
+  background: rgb(80, 90, 85);
   background: -webkit-linear-gradient(
     45deg,
-    rgb(175, 190, 240),
-    rgb(10, 40, 140)
+    rgb(200, 230, 215),
+    rgb(80, 90, 85)
   ); /* Chrome and old Safari */
   background: linear-gradient(
     -45deg,
-    rgb(175, 190, 240),
-    rgb(10, 40, 140)
+    rgb(200, 230, 215),
+    rgb(80, 90, 85)
   ); /* Edge/IE, Firefox, modern Safari */
-  background-size: 200%;
+  background-size: 400%;
   animation: gradient-animation 2s;
 }
 .gradient2 {
-  background: rgb(61, 201, 25);
+  /* z-index: -1; */
+  opacity: 0.8;
+  background: rgb(95, 45, 45);
   background: -webkit-linear-gradient(
     45deg,
-    rgb(183, 231, 170),
-    rgb(10, 117, 58)
+    rgb(230, 195, 195),
+    rgb(45, 20, 20)
   ); /* Chrome and old Safari */
   background: linear-gradient(
     -45deg,
-    rgb(183, 231, 170),
-    rgb(10, 117, 58)
+    rgb(230, 195, 195),
+    rgb(45, 20, 20)
   ); /* Edge/IE, Firefox, modern Safari */
-  background-size: 200%;
+  background-size: 400%;
   animation: gradient-animation2 2s;
 }
 .gradient3 {
-  background: rgb(145, 32, 32);
+  /* z-index: -1; */
+  opacity: 0.8;
+  background: rgb(15, 70, 85);
   background: -webkit-linear-gradient(
     45deg,
-    rgb(248, 181, 181),
-    rgb(145, 32, 32)
+    rgb(195, 225, 230),
+    rgb(15, 70, 85)
   ); /* Chrome and old Safari */
   background: linear-gradient(
     -45deg,
-    rgb(248, 181, 181),
-    rgb(145, 32, 32)
+    rgb(195, 225, 230),
+    rgb(15, 70, 85)
   ); /* Edge/IE, Firefox, modern Safari */
-  background-size: 200%;
+  background-size: 400%;
   animation: gradient-animation3 2s;
 }
 #app {
@@ -168,13 +231,13 @@ export default {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background: #ffffff;
-  z-index: 2;
+  z-index: 3;
 }
 #pages {
   border-radius: 5px;
   margin-top: 70px;
   /* margin-bottom: 15px; */
-  z-index: 1;
+  z-index: 2;
 }
 .page-content {
   padding-top: 10px;
