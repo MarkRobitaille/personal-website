@@ -70,8 +70,8 @@
               </b-carousel>
             </b-col>
           </b-row>
-          <b-row>
-            <b-col>
+          <b-row align-h="center" class="mt-2">
+            <b-col sm="11">
               <p></p>
             </b-col>
           </b-row>
@@ -146,9 +146,10 @@
               </b-carousel>
             </b-col>
           </b-row>
-          <b-row>
-            <b-col>
-              <p></p>
+          <b-row align-h="center" class="mt-2">
+            <b-col sm="11">
+              <p>Caterpeeler is a straightforward top-down action game developed in Unity. As the Caterpeeler, wiggle around a tree branch and eat leaves to become a beautiful butterfly! Dodge the spiders and make sure to hide from the ominous birds flying around the tree by hiding under piles of leaves.</p>
+              <p>Made for the CSSA Game Jam 2019 at the University of Manitoba in less than 48 hours. The theme for the game jam was "1 HP". You can download a playable build of the game on itch.io. Extract the files from the zip file and open caterpeeler.exe to start playing.</p>
             </b-col>
           </b-row>
         </b-collapse>
@@ -227,8 +228,8 @@
               </b-carousel>
             </b-col>
           </b-row>
-          <b-row>
-            <b-col>
+          <b-row align-h="center" class="mt-2">
+            <b-col sm="11">
               <p></p>
             </b-col>
           </b-row>
@@ -408,8 +409,8 @@
               </b-carousel>
             </b-col>
           </b-row>
-          <b-row>
-            <b-col>
+          <b-row align-h="center" class="mt-2">
+            <b-col sm="11">
               <p></p>
             </b-col>
           </b-row>
