@@ -41,7 +41,7 @@
             class="ml-1 mr-1 navbar-button"
             style="vertical-align:middle;"
           >
-            <font-awesome-icon :icon="['fab', 'github']" size="lg" class="mr-1"/>Github
+            <font-awesome-icon :icon="['fab', 'github']" size="lg" class="mr-1"/>GitHub
           </b-button>
           <b-button
             href="https://www.linkedin.com/in/mark-robitaille/"

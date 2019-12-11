@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 // Add FontAwesome icons and component
 import { library } from '@fortawesome/fontawesome-svg-core'
-// import {  } from '@fortawesome/free-solid-svg-icons'
+import { faExternalLinkAlt, faChevronUp, faChevronDown, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faItchIo } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -27,7 +27,7 @@ const router = new VueRouter({
 Vue.use(BootstrapVue)
 
 // Create library of emoticons and use FontAwesomeIcon
-library.add(faGithub, faLinkedin, faItchIo)
+library.add(faExternalLinkAlt, faChevronUp, faChevronDown, faPlus, faMinus, faGithub, faLinkedin, faItchIo)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 // Create and run the Vue instance
