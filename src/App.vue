@@ -123,7 +123,6 @@ export default {
   margin: 0;
 }
 .navigator {
-  padding-bottom: 100px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background: #ffffff;
