@@ -85,6 +85,7 @@
           <b-row align-h="center" class="mt-2">
             <b-col sm="11">
               <p>Family Folder is a high-fidelity prototype developed for my Human-Computer Interaction 1 course. The core idea of the application is family communication for households. Features include a group messenger, shared calendar, and shared lists. This website prototype was developed in a small group over a week or two, utilizing Vue.js, Vue Router, Vuex, and icons from Font Awesome.</p>
+              <p>Note that since our team's requirements were to have the project working on Chrome, some of the date and time data do not display properly in other browsers.</p>
             </b-col>
           </b-row>
         </b-collapse>
