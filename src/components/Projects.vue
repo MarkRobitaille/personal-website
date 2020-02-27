@@ -3,7 +3,7 @@
     <b-row class="page-content">
       <b-col>
         <h3>Projects</h3>
-        <p>On this page, you will find some of the projects I have worked on in my free time and as a student at the University of Manitoba.</p>
+        <p>On this page, you will find some of the projects I have worked on in my spare time and as a student at the University of Manitoba.</p>
         <b-button
           @click="expandAllProjects()"
           :disabled="allExpanded"
@@ -84,8 +84,8 @@
           </b-row>
           <b-row align-h="center" class="mt-2">
             <b-col sm="11">
-              <p>Family Folder is a high-fidelity prototype developed for my Human-Computer Interaction 1 course. The core idea of the application is family communication for households. Features include a group messenger, shared calendar, and shared lists. This website prototype was developed in a small group over a week or two, utilizing Vue.js, Vue Router, Vuex, and icons from Font Awesome.</p>
-              <p>Note that since our team's requirements were to have the project working on Chrome, some of the date and time data do not display properly in other browsers.</p>
+              <p>Family Folder is a high-fidelity prototype developed for my Human-Computer Interaction 1 course using user-centered design. The core idea of the application is family communication for households. Features include a group messenger, shared calendar, and shared lists. This website prototype was developed in a small group over a week or two, utilizing Vue.js, Vue Router, Vuex, and icons from Font Awesome.</p>
+              <p><strong>Note:</strong> I recommend using Chrome or a Chromium web browser when viewing this project. Since our team focused development on Chrome, as per our project requirements, some of the date and time data do not display properly in other browsers.</p>
             </b-col>
           </b-row>
         </b-collapse>

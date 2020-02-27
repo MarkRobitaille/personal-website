@@ -26,7 +26,7 @@
         </h4>
         <b-row>
         <b-col sm="4">
-          <ul>
+          <ul class="mb-0">
             <li>Java</li>
             <li>C/C++</li>
             <li>Processing</li>
@@ -35,7 +35,7 @@
           </ul>
         </b-col>
         <b-col sm="4">
-          <ul>
+          <ul class="mb-0">
             <li>Vue.js</li>
             <li>Javascript</li>
             <li>Grails</li>
