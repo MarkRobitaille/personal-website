@@ -7,7 +7,7 @@
     </b-row>
     <b-row class="page-content">
       <b-col>
-        <h3 id="hithere">Hi there!</h3>
+        <h3 id="hithere">Hi There!</h3>
         <p>My name is Mark Robitaille. I am a computer science major at the University of Manitoba. My current passions are web and video game development. I am passionate about learning new technologies and want to learn as much as possible.</p>
         <p class="mb-0">
           One of the things I value most is being a part of a community. I act as one of the executives in the Computer Science Students' Association at the University of Manitoba, where I help coordinate events for students to enjoy like game jams and social events. On top of that, I help maintain and promote our lounge to encourage new computer science students to mingle with and learn from more experienced students.
