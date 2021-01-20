@@ -56,7 +56,7 @@
     </b-navbar>
     <!-- Page content -->
     <b-row align-h="center" class="ml-0 mr-0">
-      <b-col sm="8">
+      <b-col lg="8">
         <transition name="fade" mode="out-in">
           <router-view id="pages" class="ml-0 mr-0"></router-view>
         </transition>
@@ -139,6 +139,9 @@ export default {
   margin-bottom: 15px;
   background: #ffffff;
   border-radius: 5px;
+}
+hr {
+    background-color: lightgray;
 }
 html,
 body {
